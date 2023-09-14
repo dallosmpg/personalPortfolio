@@ -1,0 +1,92 @@
+/* Reset CSS */
+/*---------------------------------------*/
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Margin and padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+figure,
+figcaption,
+blockquote,
+fieldset,
+legend,
+hr,
+pre,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography reset */
+body,
+button,
+input,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* List reset */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Link reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Tables reset */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset form elements */
+button,
+input,
+select,
+textarea {
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+/* Textarea resize */
+textarea {
+    resize: vertical;
+}
+
+/*---------------------------------------*/
+/* End of Reset CSS */

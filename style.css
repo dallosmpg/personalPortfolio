@@ -1,4 +1,80 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./res/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(./res/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+:root {
+    --blue: #0891b2;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
 svg {
     width: 32px;
     height: 32px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    /* background-color: var(--blue); */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 0;
+    right: 0;
+    bottom: 70%;
+    background-color: var(--blue);
+    transform: skewY(-10deg);
+}
+header h1 {
+    width: 50%;
+    font-family: 'PlayfairDisplay';
+    font-size: 2rem;
+    color: white;
+
+    padding: .3rem .6rem;
+
+    white-space: normal;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+}
+.image-container {
+    max-width: 80vw;
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
