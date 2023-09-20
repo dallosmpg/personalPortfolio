@@ -163,6 +163,30 @@ footer .info-text .call-for-action {
     align-items: center;
 }
 
+/* ! Pseudo-classes */
 a:hover {
     scale: 1.1;
 }
+
+/* Media queries */
+
+@media (min-width: 500px) {
+    img {
+        max-width: 35%;
+        display: absolute;
+    }
+    
+    header {
+        max-width: 80vw;
+        background: white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    header:before {
+        top: -150px;
+        bottom: 77%;
+    }
+
+    .project-card {
+        max-width: 320px;
+    }
+} 
