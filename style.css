@@ -53,16 +53,11 @@ body {
 body > * {
     margin-bottom: 1.5rem;
 }
-
-header {
-    /* background-color: var(--blue); */
-}
-
 header::before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -70px;
+    top: -80px;
     left: 0;
     right: 0;
     bottom: 78%;
@@ -72,8 +67,8 @@ header::before {
 header h1 {
     display: inline-block;
     width: 70%;
-    bottom: 0;
-    left: 0;
+    top: 14.4rem;
+    left: .6rem;
 
     padding: .3rem .6rem;
 
@@ -85,17 +80,13 @@ header h1 {
 header .links {
     margin-top: 1rem;
 }
-header .image-container {
-    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); */
-}
 header .about-me {
     padding-top: 1.5rem;
 }
 .links a {
     margin: .3rem;
 }
-
-.image-container {
+header img {
     max-width: 90vw;
 }
 
@@ -169,24 +160,72 @@ a:hover {
 }
 
 /* Media queries */
-
+/* ! Tablet */
 @media (min-width: 500px) {
-    img {
-        max-width: 35%;
-        display: absolute;
+    .container {
+        display: initial;
     }
-    
     header {
         max-width: 80vw;
         background: white;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-top: 4rem;
+
+        display: flex;
+        justify-items: center;
+        align-items: center;
     }
     header:before {
-        top: -150px;
-        bottom: 77%;
+        top: -180px;
+        bottom: 75%;
+    }
+    header h1 {
+        top: -2.85rem;
+        left: 9.1rem;
+        z-index: 1;
+    }
+    header h2 {
+        display: inline-block;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: .2rem;
+    } 
+    header p {
+        padding: 0 1rem;
+    }
+    header img {
+        max-width: 50%;
+        float: left;
+        margin-right: 1rem;
+        position: relative;
+        top: -3em;
+        left: -3rem;
+    }
+    header .links {
+        width: 100px;
+        margin: 0.5rem auto 1rem;
     }
 
-    .project-card {
-        max-width: 320px;
+    main {
+        width: 100vw;
     }
-} 
+    main h2 {
+        margin: 0 1rem;
+    }
+    .project-card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 1rem;
+    }
+    .project-card {
+        flex: 1;
+        min-width: calc(45% - 50px);
+        /* margin: 1rem; */
+        /* max-width: 200px; */
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
