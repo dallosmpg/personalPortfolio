@@ -67,6 +67,7 @@ header::before {
 header h1 {
     display: inline-block;
     width: 70%;
+    position: absolute;
     top: 14.4rem;
     left: .6rem;
 
@@ -80,7 +81,7 @@ header h1 {
 header .links {
     margin-top: 1rem;
 }
-header .about-me {
+header .content {
     padding-top: 1.5rem;
 }
 .links a {
