@@ -178,6 +178,8 @@ a:hover {
     header:before {
         top: -180px;
         bottom: 75%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+
     }
     header h1 {
         top: -2.85rem;
@@ -227,5 +229,45 @@ a:hover {
 
     footer {
         width: 100vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    /* ! Header DESKTOP  */
+    header:before {
+        top: -350px;
+        bottom: 30%;
+    }
+    header {
+        display: initial;
+    }
+    header h1 {
+        bottom: 0;
+        top: initial;
+        left: 9.1rem;
+        z-index: 1;
+    }
+    header img {
+        max-width: 50%;
+        margin-right: 1rem;
+        float: left;
+        /* position: relative;
+        top: -3em;
+        left: -3rem; */
+    }
+
+
+    main {
+        padding: 3rem;
+    }
+    .project-card-container.flex-center-column {
+        justify-content: start;
+    }
+    .project-card {
+        flex: 1;
+        min-width: calc(25% - 50px);
+        max-width: 350px;
+        /* margin: 1rem; */
+        /* max-width: 200px; */
     }
 }
