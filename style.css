@@ -65,18 +65,14 @@ header::before {
     transform: skewY(-20deg);
 }
 header h1 {
-    display: inline-block;
-    width: 70%;
     position: absolute;
-    top: 14.4rem;
+    bottom: 0rem;
     left: .6rem;
 
     padding: .3rem .6rem;
 
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    line-height: 1.05;
-    white-space: normal;
 }
 header .links {
     margin-top: 1rem;
